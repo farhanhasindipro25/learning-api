@@ -8,7 +8,10 @@
 
 function loadData(){
     const url = 'https://jsonplaceholder.typicode.com/todos/1';
+    // gets data from URL
     fetch(url)
+        // Converts data to JSON Object
         .then(response => response.json())
-        .then(json => console.log(json));
+        // Displays JSON Object
+        .then(json => console.log(json))
 }
